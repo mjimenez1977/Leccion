@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Leccion.MainPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="icon.png" WidthRequest="35"/>
+            <Label Text="Lección 1" 
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="white"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    
+    
+    <ScrollView >
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" BackgroundColor="Aquamarine">
+
+            <StackLayout>
+                <Label Text="Leccion Curso Xamarin" HorizontalOptions="Center"></Label>
+                <Label Text="Hola Mundo!"  FontSize="Large" HorizontalOptions="Center" FontFamily="FontApp"></Label>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"  
+                     HeightRequest="100"  
+                     WidthRequest="100"  
+                     BackgroundColor="Indigo" 
+                     HorizontalOptions="Center"
+                     Padding="5,5,5,5">
+
+                <Image Source="xamarin.jpg" HorizontalOptions="FillAndExpand"></Image>
+
+            </StackLayout>
+
+
+            <StackLayout VerticalOptions="EndAndExpand"> 
+                <Button Text="Aceptar" 
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Clicked="Button_Clicked"
+                ></Button>
+            </StackLayout>
+
+        </StackLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</ContentPage>

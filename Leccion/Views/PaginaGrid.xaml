@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Leccion.Views.PaginaGrid"
+             Title="Grid Exploration" 
+             Icon="icon.png">
+
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="icon.png" WidthRequest="35"/>
+            <Label Text="Grid Exploration" 
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="white"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        
+        
+
+        <ScrollView>
+
+
+
+            <StackLayout BackgroundColor="#303030">
+
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"></RowDefinition>
+                        <RowDefinition Height="230.5"></RowDefinition>
+                        <RowDefinition Height="172.875"></RowDefinition>
+                        <RowDefinition Height="172.875"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="First row hight:" TextColor="White"></Label>
+                        <Slider Minimum="0" Maximum="100" HorizontalOptions="FillAndExpand"></Slider>
+                    </StackLayout>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0" BackgroundColor="Aqua"></StackLayout>
+                        <StackLayout Grid.Column="1" BackgroundColor="Black"></StackLayout>
+
+                    </Grid>
+
+
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0" BackgroundColor="DarkGray"></StackLayout>
+                        <StackLayout Grid.Column="1" BackgroundColor="Green"></StackLayout>
+
+                    </Grid>
+
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0" BackgroundColor="Yellow"></StackLayout>
+                        <StackLayout Grid.Column="1" BackgroundColor="Violet"></StackLayout>
+
+                    </Grid>
+
+                </Grid>
+                
+                
+                
+    
+            </StackLayout>
+
+ 
+
+
+
+        </ScrollView>
+  
+
+
+
+    </ContentPage.Content>
+    
+
+    
+    
+    
+</ContentPage>
+
+        
+        
+        
+        
+    
+    
